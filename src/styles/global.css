@@ -1,0 +1,280 @@
+/* ======================================================
+   GOOGLE FONT
+====================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* ======================================================
+   CSS VARIABLES
+====================================================== */
+
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --background: #f8fafc;
+  --section-bg: #f1f5f9;
+  --card-bg: #ffffff;
+
+  --text-color: #1e293b;
+  --text-light: #64748b;
+
+  --border-color: #e2e8f0;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, .06);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, .08);
+  --shadow-lg: 0 18px 45px rgba(0, 0, 0, .12);
+
+  --radius: 18px;
+
+  --transition: .35s ease;
+}
+
+/* ======================================================
+   DARK MODE
+====================================================== */
+
+body[data-theme="dark"] {
+
+  --background: #0f172a;
+
+  --section-bg: #111827;
+
+  --card-bg: #1e293b;
+
+  --text-color: #f8fafc;
+
+  --text-light: #cbd5e1;
+
+  --border-color: #334155;
+
+}
+
+/* ======================================================
+   RESET
+====================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: "Poppins", sans-serif;
+
+  background: var(--background);
+
+  color: var(--text-color);
+
+  transition: background .4s ease, color .4s ease;
+
+  overflow-x: hidden;
+
+}
+
+/* ======================================================
+   GLOBAL
+====================================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+section {
+  padding: 110px 0;
+}
+
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+/* ======================================================
+   TITLES
+====================================================== */
+
+.section-title {
+
+  font-size: 2.5rem;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 18px;
+
+  color: var(--text-color);
+
+}
+
+.section-subtitle {
+
+  max-width: 700px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+
+  color: var(--text-light);
+
+  line-height: 1.8;
+
+}
+
+/* ======================================================
+   BUTTONS
+====================================================== */
+
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 14px 34px;
+
+  border-radius: 12px;
+
+  background: var(--primary-color);
+
+  color: #fff;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+
+}
+
+.btn:hover {
+
+  background: var(--primary-hover);
+
+  transform: translateY(-3px);
+
+}
+
+.btn-outline {
+
+  background: transparent;
+
+  color: var(--primary-color);
+
+  border: 2px solid var(--primary-color);
+
+}
+
+.btn-outline:hover {
+
+  background: var(--primary-color);
+
+  color: #fff;
+
+}
+
+/* ======================================================
+   CARD
+====================================================== */
+
+.card {
+
+  background: var(--card-bg);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition);
+
+}
+
+.card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-lg);
+
+}
+
+/* ======================================================
+   SCROLLBAR
+====================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: var(--primary-color);
+
+  border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-track {
+
+  background: #dbeafe;
+
+}
+
+body[data-theme="dark"]::-webkit-scrollbar-track {
+
+  background: #0f172a;
+
+}
+
+/* ======================================================
+   SELECTION
+====================================================== */
+
+::selection {
+
+  background: var(--primary-color);
+
+  color: #fff;
+
+}
+
+/* ======================================================
+   SMALL DEVICES
+====================================================== */
+
+@media (max-width:768px) {
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 40px;
+  }
+
+  section {
+    padding: 80px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}

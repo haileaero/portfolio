@@ -1,0 +1,105 @@
+/* ==========================================
+   SERVICES
+========================================== */
+
+.services {
+  background: var(--background);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.service-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--primary-color);
+
+  border-radius: 50%;
+
+  font-size: 2.5rem;
+
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: var(--primary-color);
+  color: #fff;
+  transform: rotate(10deg) scale(1.08);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  color: var(--text-color);
+}
+
+.service-card p {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ==========================================
+   LAPTOP
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 35px 25px;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+}
