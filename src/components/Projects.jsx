@@ -18,7 +18,7 @@ function Projects() {
       description:
         "A task management application with task creation, completion, priorities, due dates, dark mode, and responsive design.",
       technologies: ["React", "Vite", "CSS"],
-      github: "https://github.com/haileaero/task-manager",
+      github: "https://task-manager-haileassefa.vercel.app/",
       demo: "https://task-manager-delta-three-78.vercel.app/",
     },
 
