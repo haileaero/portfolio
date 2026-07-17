@@ -39,7 +39,7 @@ function Projects() {
         "A modern responsive portfolio website showcasing my projects, technical skills, resume, and contact information.",
       technologies: ["React", "Vite", "CSS"],
       github: "https://github.com/haileaero/portfolio",
-      demo: "https://portfolio-delta-coral-54.vercel.app/",
+      demo: "https://portfolio-haileaero.vercel.app/",
     },
   ];
 
