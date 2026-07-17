@@ -1,14 +1,16 @@
 function Projects() {
   const projects = [
     {
-      title: "Weather Dashboard",
-      image: "/projects/weather-dashboard.png",
-      description:
-        "A modern weather application that provides current weather conditions and a 5-day forecast using the OpenWeather API.",
-      technologies: ["React", "Vite", "CSS", "OpenWeather API"],
-      github: "#",
-      demo: "#",
-    },
+  title: "Weather Dashboard",
+  image: "/projects/weather-dashboard.png",
+  description:
+    "A modern weather application that provides current weather conditions and a 5-day forecast using the OpenWeather API.",
+  technologies: ["React", "Vite", "CSS", "OpenWeather API"],
+
+  github: "https://github.com/haileaero/weather-dashboard",
+
+  demo: "https://weather-dashboard-gold-one.vercel.app/",
+},
 
     {
       title: "Task Manager",
@@ -16,8 +18,8 @@ function Projects() {
       description:
         "A task management application with task creation, completion, priorities, due dates, dark mode, and responsive design.",
       technologies: ["React", "Vite", "CSS"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/haileaero/task-manager",
+      demo: "https://task-manager-delta-three-78.vercel.app/",
     },
 
     {
@@ -26,8 +28,8 @@ function Projects() {
       description:
         "A student management system for adding, updating, searching, and deleting student records with a clean interface.",
       technologies: ["React", "Vite", "CSS"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/haileaero/student-management",
+      demo: "https://student-management-ten-eta.vercel.app/",
     },
 
     {
@@ -36,8 +38,8 @@ function Projects() {
       description:
         "A modern responsive portfolio website showcasing my projects, technical skills, resume, and contact information.",
       technologies: ["React", "Vite", "CSS"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/haileaero/portfolio",
+      demo: "https://portfolio-delta-coral-54.vercel.app/",
     },
   ];
 
